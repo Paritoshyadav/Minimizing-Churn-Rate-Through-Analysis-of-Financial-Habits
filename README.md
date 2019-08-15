@@ -13,3 +13,26 @@ Subscription Products often are the main source of revenue for companies across 
 
 # DATA
 - By subscribing to the membership, our customers have provided us with data on their finances, as well as how they handle those finances through the product. We also have some demographic information we acquired from them during the sign-up process. • Financial data can often be unreliable and delayed. As a result, companies can sometimes build their marketing models using only demographic data, and data related to finances handled through the product itself. Therefore, we will be restricting ourselves to only using that type of data. Furthermore, product-related data is more indicative of what new features we should be creating as a company. 
+
+# DATASET
+Mock-up dataset based on trends found in real world case studies; 27 000 instances and 30 features (40 after creating dummy variables of categorical ones)
+
+# Goal
+Predict which users are likely to churn, so that the company can focus on re-engaging these users with the product.
+
+# Algorithms uses:
+- LR regularization L1 and L2 
+- SVM classifier 
+- GB classifier
+- RF classifier
+- Grid search
+
+# Conclusion
+Once I employed all these methods, we were able to utilize various machine learning metrics. Each model provided valuable insight. The best result is given by svm with hyperparameter using GridSearchCV and RF method
+## Parameter uses
+- `C: 15` 
+- `gamma: 0.01`
+- `kernel': 'rbf'`
+
+# Result
+After using best parameter from grid search and RFE we get accuracy of 68% 
